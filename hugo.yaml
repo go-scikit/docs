@@ -87,13 +87,13 @@ params:
   # The release of each library these pages describe, for the member
   # organisations that are new in the parity plan. The newest minor version
   # among them is the documentation's version label (v0.1.0 -> 0.1): the CI
-  # reads it here. bigfloat has no tag yet, so it is "main".
+  # reads it here. bigfloat is released v0.1.0.
   libraries:
     interp: "v0.1.0"
     poly: "v0.1.0"
     signal: "v0.1.0"
     sparse: "v0.1.0"
-    bigfloat: "main"
+    bigfloat: "v0.1.0"
   versions:
     # The version selector shows "main" with the development icon.
     development: "main"
