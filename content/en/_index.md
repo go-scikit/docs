@@ -36,7 +36,7 @@ MATLAB and Mathematica. Wave 1 is under way, in four organisations:
 | go-approx | [poly](https://github.com/go-approx/poly) | released v0.1.0 | [go-approx]({{< relref "approx" >}}) |
 | go-dsp | [signal](https://github.com/go-dsp/signal) | released v0.1.0 | [go-dsp]({{< relref "dsp" >}}) |
 | go-sparse | [sparse](https://github.com/go-sparse/sparse) | released v0.1.0 | [go-sparse]({{< relref "sparse" >}}) |
-| go-bignum | [bigfloat](https://github.com/go-bignum/bigfloat) | in development, not yet tagged | [go-bignum]({{< relref "bignum" >}}) |
+| go-bignum | [bigfloat](https://github.com/go-bignum/bigfloat) | released v0.1.0 | [go-bignum]({{< relref "bignum" >}}) |
 
 The other organisations of the plan (go-symbolic, go-mlkit, go-autodiff,
 go-geometry, go-fem, go-graphalgo, go-control, go-units, go-sciio) are
