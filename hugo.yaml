@@ -5,7 +5,7 @@
 # minor version among the libraries the pages describe (0.1, 0.2, ...), or
 # "main" while none of them is tagged. The CI sets it through --baseURL, from
 # params.libraries below. This default is the same build.
-baseURL: "https://go-scikit.github.io/docs/0.1/"
+baseURL: "https://go-scikit.github.io/docs/0.2/"
 title: "go-scikit"
 # themes/hextra is the tannevaled/hextra fork, pinned at a release tag
 # (v0.16.0): upstream Hextra plus opt-in features (partial menu items, combos,
@@ -87,9 +87,10 @@ params:
   # The release of each library these pages describe, for the member
   # organisations that are new in the parity plan. The newest minor version
   # among them is the documentation's version label (v0.1.0 -> 0.1): the CI
-  # reads it here. bigfloat is released v0.1.0.
+  # reads it here. interp is released v0.2.0, so the documentation is version
+  # 0.2; the 0.1 pages stay published beside it.
   libraries:
-    interp: "v0.1.0"
+    interp: "v0.2.0"
     poly: "v0.1.0"
     signal: "v0.1.0"
     sparse: "v0.1.0"
