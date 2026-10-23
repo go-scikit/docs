@@ -32,7 +32,7 @@ MATLAB and Mathematica. Wave 1 is under way, in four organisations:
 
 | Organisation | Package | Status | Pages |
 | --- | --- | --- | --- |
-| go-approx | [interp](https://github.com/go-approx/interp) | released v0.2.0 | [go-approx]({{< relref "approx" >}}) |
+| go-approx | [interp](https://github.com/go-approx/interp) | released v0.2.1 | [go-approx]({{< relref "approx" >}}) |
 | go-approx | [poly](https://github.com/go-approx/poly) | released v0.1.0 | [go-approx]({{< relref "approx" >}}) |
 | go-dsp | [signal](https://github.com/go-dsp/signal) | released v0.1.0 | [go-dsp]({{< relref "dsp" >}}) |
 | go-sparse | [sparse](https://github.com/go-sparse/sparse) | released v0.1.0 | [go-sparse]({{< relref "sparse" >}}) |

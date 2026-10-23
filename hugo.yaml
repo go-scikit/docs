@@ -87,10 +87,11 @@ params:
   # The release of each library these pages describe, for the member
   # organisations that are new in the parity plan. The newest minor version
   # among them is the documentation's version label (v0.1.0 -> 0.1): the CI
-  # reads it here. interp is released v0.2.0, so the documentation is version
-  # 0.2; the 0.1 pages stay published beside it.
+  # reads it here. interp is released v0.2.1, so the documentation is version
+  # 0.2 (a patch release does not make a new version); the 0.1 pages stay
+  # published beside it.
   libraries:
-    interp: "v0.2.0"
+    interp: "v0.2.1"
     poly: "v0.1.0"
     signal: "v0.1.0"
     sparse: "v0.1.0"
