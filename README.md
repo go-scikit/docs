@@ -17,7 +17,7 @@ newest minor among `params.libraries` in `hugo.yaml`.
 
 ```sh
 git submodule update --init
-sh themes/hextra/scripts/page-history.sh > data/pagehistory.json
+go run github.com/tannevaled/hextra/cmd/pagehistory@v0.21.0 > data/pagehistory.json
 hugo server
 ```
 
