@@ -45,6 +45,19 @@ planned; nothing is released there.
 "Released" means a tag exists. The status of every item, with its evidence, is
 in [STATUS.md](https://github.com/go-scikit/roadmap/blob/main/STATUS.md).
 
+## Measuring against the references
+
+The [performance campaign](https://github.com/go-scikit/roadmap/blob/main/docs/performance-campaign.md)
+sets the rule for every speed claim of the stack: the Go function against its
+reference (NumPy, SciPy, mpmath, the C library it ports), on one core, in
+interleaved rounds, only when the host's 1-minute load is under 8. One tool
+does it, [go-scikit/refbench](https://github.com/go-scikit/refbench) (v0.1.0):
+a Go library and a small command that write `docs/perf.json` and
+`docs/perf-table.md`, check allocation counts on every pull request without
+timing anything, check that every public function has a case or a named
+exemption, and draft an issue for each row that is slower than its reference.
+No repository has migrated to it yet: go-geometry/predicates is the first.
+
 ## Where else
 
 - The portal: [go-scikit.github.io](https://go-scikit.github.io/).
