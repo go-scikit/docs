@@ -15,10 +15,13 @@ sparse eigensolvers.
 ## What is verified
 
 From [STATUS.md](https://github.com/go-scikit/roadmap/blob/main/STATUS.md):
-iteration counts equal SciPy's for CG, GMRES, MINRES and LSQR. Six measured
-spmv, CG and GMRES cases are at or below SciPy's time. `ldl` is 1.06 to 1.21x
-slower than C QDLDL v0.1.9 on the AMD rows, which is an open defect. The
-refbench table of the package is not yet timed.
+iteration counts equal SciPy's for CG, GMRES, MINRES and LSQR. The speed
+tables against SciPy and against C QDLDL v0.1.9 are in
+[docs/perf.md](https://github.com/go-sparse/sparse/blob/main/docs/perf.md). On
+the AMD-ordered rows, measured on v0.2.1 (a re-measurement on v0.3.x is
+pending), `ldl` is 1.11 to 1.21x slower than QDLDL in the numeric factorisation
+and 0.96 to 1.13x in the solves; that is an open defect. The refbench table of
+the package is not yet timed.
 
 ## Where to read more
 
