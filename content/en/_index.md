@@ -32,15 +32,16 @@ MATLAB and Mathematica. Wave 1 is under way, in four organisations:
 
 | Organisation | Package | Status | Pages |
 | --- | --- | --- | --- |
-| go-approx | [interp](https://github.com/go-approx/interp) | released v0.2.1 | [go-approx]({{< relref "approx" >}}) |
-| go-approx | [poly](https://github.com/go-approx/poly) | released v0.1.0 | [go-approx]({{< relref "approx" >}}) |
-| go-dsp | [signal](https://github.com/go-dsp/signal) | released v0.1.0 | [go-dsp]({{< relref "dsp" >}}) |
-| go-sparse | [sparse](https://github.com/go-sparse/sparse) | released v0.1.0 | [go-sparse]({{< relref "sparse" >}}) |
-| go-bignum | [bigfloat](https://github.com/go-bignum/bigfloat) | released v0.1.0 | [go-bignum]({{< relref "bignum" >}}) |
+| go-approx | [interp](https://github.com/go-approx/interp) | released v0.2.2 | [go-approx]({{< relref "approx" >}}) |
+| go-approx | [poly](https://github.com/go-approx/poly) | released v0.1.1 | [go-approx]({{< relref "approx" >}}) |
+| go-dsp | [signal](https://github.com/go-dsp/signal) | released v0.2.0 | [go-dsp]({{< relref "dsp" >}}) |
+| go-sparse | [sparse](https://github.com/go-sparse/sparse) | released v0.3.2 | [go-sparse]({{< relref "sparse" >}}) |
+| go-bignum | [bigfloat](https://github.com/go-bignum/bigfloat) | released v0.2.0 | [go-bignum]({{< relref "bignum" >}}) |
 
-The other organisations of the plan (go-symbolic, go-mlkit, go-autodiff,
-go-geometry, go-fem, go-graphalgo, go-control, go-units, go-sciio) are
-planned; nothing is released there.
+In go-geometry, [predicates](https://github.com/go-geometry/predicates) is
+released (v0.1.0). The other organisations of the plan (go-symbolic,
+go-mlkit, go-autodiff, go-fem, go-graphalgo, go-control, go-units, go-sciio)
+are planned; the roadmap's STATUS.md says what is released.
 
 "Released" means a tag exists. The status of every item, with its evidence, is
 in [STATUS.md](https://github.com/go-scikit/roadmap/blob/main/STATUS.md).
@@ -51,12 +52,14 @@ The [performance campaign](https://github.com/go-scikit/roadmap/blob/main/docs/p
 sets the rule for every speed claim of the stack: the Go function against its
 reference (NumPy, SciPy, mpmath, the C library it ports), on one core, in
 interleaved rounds, only when the host's 1-minute load is under 8. One tool
-does it, [go-scikit/refbench](https://github.com/go-scikit/refbench) (v0.1.0):
+does it, [go-scikit/refbench](https://github.com/go-scikit/refbench) (v0.4.1):
 a Go library and a small command that write `docs/perf.json` and
 `docs/perf-table.md`, check allocation counts on every pull request without
 timing anything, check that every public function has a case or a named
 exemption, and draft an issue for each row that is slower than its reference.
-No repository has migrated to it yet: go-geometry/predicates is the first.
+The tables of ndarray, special and optimize are produced with it; the others
+(fft, stats, sparse, signal, interp, poly, integrate) have a table whose
+timings are deferred until a run under the load gate.
 
 ## Where else
 
